@@ -1,14 +1,19 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import SignUp from "./components/SignUp";
-// import TableArea from "./components/TableArea";
-import Jumbotron from "./components/Jumbotron";
+// import TableHeadings from "./components/TableHeadings";
+// import TableData from "./components/TableData";
+// import PlayerQue from "./components/PlayerQue";
+// import OpenGames from "./components/OpenGames";
 
 function App() {
   return (
-    <div className="container">
+    <div className="App">
       <Navbar/>
-      <Jumbotron />
+      {/* <OpenGames/> */}
+      {/* <PlayerQue /> */}
+      {/* <TableHeadings/> */}
+      {/* <TableData/> */}
       <SignUp />
       
     </div>
