@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-// import SignUp from "./components/SignUp";
+import SignUp from "./components/SignUp";
 // import TableHeadings from "./components/TableHeadings";
 // import TableData from "./components/TableData";
-import PlayerQue from "./components/PlayerQue";
+// import PlayerQue from "./components/PlayerQue";
 // import OpenGames from "./components/OpenGames";
 
 function App() {
@@ -11,10 +11,10 @@ function App() {
     <div className="App">
       <Navbar/>
       {/* <OpenGames/> */}
-      <PlayerQue />
+      {/* <PlayerQue /> */}
       {/* <TableHeadings/> */}
       {/* <TableData/> */}
-      {/* <SignUp /> */}
+      <SignUp />
       
     </div>
   );
