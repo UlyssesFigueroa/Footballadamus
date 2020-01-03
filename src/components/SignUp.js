@@ -1,98 +1,101 @@
 import React from "react";
 
+const divStyle = {
+    fontSize:'30px',
+    textAlign:'center'
+    
+  };
+
 function SignUp() {
-    return(
+  return (
+    <div classNameName="jumbotron">
+        <h1 style ={divStyle}>Create an account!</h1>
+      <div className="field">
+        {/* <label className="label">Name</label> */}
+        <div className="control">
+          {/* <input className="input" type="text" placeholder="Your Name"/> */}
+        </div>
+      </div>
 
-        <div className="jumbotron">
-            <div class="field">
-  <label class="label">Name</label>
-  <div class="control">
-    <input class="input" type="text" placeholder="Your Name"/>
-  </div>
-</div>
+      <div className="field">
+        <label className="label">Username</label>
+        <div className="control has-icons-left has-icons-right">
+          <input className="input" type="text" placeholder="Your Username" />
+          <span className="icon is-small is-left">
+            <i className="fas fa-user"></i>
+          </span>
+        </div>
+        {/* <p className="help is-success">This username is available</p> */}
+      </div>
 
-<div class="field">
-  <label class="label">Username</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-success" type="text" placeholder="Your Username" />
-    <span class="icon is-small is-left">
-      <i class="fas fa-user"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fas fa-check"></i>
-    </span>
-  </div>
-  <p class="help is-success">This username is available</p>
-</div>
+      <div className="field">
+        <label className="label">Password</label>
+        <div className="control has-icons-left has-icons-right">
+          <input
+            className="input"
+            type="password"
+            placeholder="Your Password"
+          />
+          <span className="icon is-small is-left">
+            <i className="fas fa-lock"></i>
+          </span>
+        </div>
+        {/* <p className="help is-danger">This email is invalid</p> */}
+      </div>
 
-<div class="field">
-  <label class="label">Email</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-danger" type="email" placeholder="Your Email"/>
-    <span class="icon is-small is-left">
-      <i class="fas fa-envelope"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fas fa-exclamation-triangle"></i>
-    </span>
-  </div>
-  <p class="help is-danger">This email is invalid</p>
-</div>
+      <div className="field">
+        <label className="label">Avatar</label>
+        <div className="control">
+          <div className="select">
+            <select>
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+          </div>
+        </div>
+      </div>
 
-<div class="field">
-  <label class="label">Avatar</label>
-  <div class="control">
-    <div class="select">
-      <select>
-        <option>Select dropdown</option>
-        <option>With options</option>
-      </select>
-    </div>
-  </div>
-</div>
+      {/* Additional Options Below*/}
 
-{/* Additional Options Below*/}
-
-{/* <div class="field">
-  <label class="label">Message</label>
-  <div class="control">
-    <textarea class="textarea" placeholder="Textarea"></textarea>
+      {/* <div className="field">
+  <label className="label">Message</label>
+  <div className="control">
+    <textarea className="textarea" placeholder="Textarea"></textarea>
   </div>
 </div> */}
 
-{/* <div class="field">
-  <div class="control">
-    <label class="checkbox">
+      {/* <div className="field">
+  <div className="control">
+    <label className="checkbox">
       <input type="checkbox"/>
       I agree to the <a href="#">terms and conditions</a>
     </label>
   </div>
 </div> */}
 
-
-{/* <div class="field">
-  <div class="control">
-    <label class="radio">
+      {/* <div className="field">
+  <div className="control">
+    <label className="radio">
       <input type="radio" name="question"/>
       Yes
     </label>
-    <label class="radio">
+    <label className="radio">
       <input type="radio" name="question"/>
       No
     </label>
   </div>
 </div> */}
 
-<div class="field is-grouped">
-  <div class="control">
-    <button class="button is-link">Submit</button>
-  </div>
-  <div class="control">
-    <button class="button is-link is-light">Cancel</button>
-  </div>
-</div>
+      <div className="field is-grouped">
+        <div className="control">
+          <button className="button is-link">Sign Up</button>
         </div>
-    )
+        <div className="control">
+          <button className="button is-link is-light">Cancel</button>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default SignUp;
