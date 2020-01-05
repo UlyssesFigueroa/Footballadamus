@@ -7,7 +7,7 @@ const divStyle = {
 };
 
 
-const choices = ["tackle", "fumble", "reception", "field goal"]
+// const choices = ["tackle", "fumble", "reception", "field goal"]
 // ReactDOM.render(
 //     <PlayerChoices choices={choices}/>,
 //     document.getElementById('listitem')
