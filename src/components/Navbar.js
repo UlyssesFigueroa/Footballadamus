@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
     return (<nav className="navbar is-transparent">
     <div className="navbar-brand">
-      <a className="navbar-item" href="https://bulma.io">
+      <a className="navbar-item" href="/l">
         <img src="https://github.com/UlyssesFigueroa/Footballadamus/blob/jorge/assets/images/Footballimage.png?raw=true" alt="Football: a modern CSS framework based on Flexbox" height="500"/>
       </a>
       <div className="navbar-burger burger" data-target="navbarExampleTransparentExample">

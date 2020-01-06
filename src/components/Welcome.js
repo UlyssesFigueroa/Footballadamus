@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 
 // will link styles later
@@ -40,7 +41,9 @@ function Welcome() {
         <br />
         <h2>Ready to begin?</h2>
 
-        <button className="button">Button</button>
+        <button className="button"><Link to="/signup" className={window.location.pathname === "/signup" ? "nav-link active" : "nav-link"}>
+                    Get Started
+        </Link></button>
 
       </div>
     </div>

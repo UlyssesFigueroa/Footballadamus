@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import {Text, View} from 'react-native';
 import Navbar from "./components/Navbar";
 import SignUp from "./components/SignUp";
 import Selection from "./components/Selection";

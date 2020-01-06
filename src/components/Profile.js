@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const divStyle = {
   fontSize: "30px",
@@ -32,7 +33,9 @@ function Profile() {
       <br />
 
       <div class="buttons">
-        <button class="button is-primary">Create new Game</button>
+        <button class="button is-primary"><Link to="/playerque" className={window.location.pathname === "/playerque" ? "nav-link active" : "nav-link"}>
+                    Create a Game
+        </Link></button>
         <button class="button is-link">Search for a Game</button>
       </div>
     </div>

@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const divStyle = {
-    fontSize:'30px',
-    textAlign:'center'
-    
-  };
+  fontSize: '30px',
+  textAlign: 'center'
+
+};
 
 function SignUp() {
   return (
     <div classNameName="jumbotron">
-        <h1 style ={divStyle}>Create an account!</h1>
+      <h1 style={divStyle}>Create an account!</h1>
       <div className="field">
         {/* <label className="label">Name</label> */}
         <div className="control">
@@ -88,10 +89,14 @@ function SignUp() {
 
       <div className="field is-grouped">
         <div className="control">
-          <button className="button is-link">Sign Up</button>
+          <button className="button"><Link to="/profile" className={window.location.pathname === "/profile" ? "nav-link active" : "nav-link"}>Sign Up
+            
+        </Link></button>
         </div>
         <div className="control">
-          <button className="button is-link is-light">Cancel</button>
+          <button className="button is-link is-light"><Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
+                    Cancel
+        </Link></button>
         </div>
       </div>
     </div>
