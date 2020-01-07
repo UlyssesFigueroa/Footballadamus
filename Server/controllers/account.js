@@ -32,7 +32,7 @@ AccountController.prototype.logon = function (email, password, callback) {
 
     var me = this;
     me.userModel.findOne({
-        email: email
+        userName: userName
     }, function (err, user) {
 
         if (err) {
@@ -52,8 +52,7 @@ AccountController.prototype.logon = function (email, password, callback) {
 
                     var userProfileModel = new me.UserProfile({
                         email: user.email,
-                        firstName: user.firstName,
-                        lastName: user.lastName
+                        userName: user.userName
                     });
 
                     me.session.userProfileModel = userProfileModel;
@@ -153,8 +152,7 @@ AccountController.prototype.register = function (newUser, callback) {
                 if (numberAffected === 1) {
                     var userProfileModel = new me.UserProfileModel({
                         email: user.email,
-                        firstName: user.firstName,
-                        lastName: user.lastName,
+                        userName: user.userName,
                         city: user.city,
                         state: user.state
                     });
