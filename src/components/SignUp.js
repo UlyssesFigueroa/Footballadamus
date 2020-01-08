@@ -19,9 +19,9 @@ function SignUp() {
       </div>
 
       <div className="field">
-        <label className="label">Username</label>
+        <label className="label">New Username</label>
         <div className="control has-icons-left has-icons-right">
-          <input className="input" type="text" placeholder="Your Username" />
+          <input className="input" type="text" placeholder="New Username" />
           <span className="icon is-small is-left">
             <i className="fas fa-user"></i>
           </span>
@@ -30,12 +30,12 @@ function SignUp() {
       </div>
 
       <div className="field">
-        <label className="label">Password</label>
+        <label className="label">New Password</label>
         <div className="control has-icons-left has-icons-right">
           <input
             className="input"
             type="password"
-            placeholder="Your Password"
+            placeholder="New Password"
           />
           <span className="icon is-small is-left">
             <i className="fas fa-lock"></i>
