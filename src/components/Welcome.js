@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 // will link styles later
 const headerStyle = {
@@ -40,8 +40,33 @@ function Welcome() {
         <br />
         <h2>Ready to begin?</h2>
 
-        <button className="button">Button</button>
+        <div style={ruleStyle} className="buttons">
+          <button className="button">
+            <Link
+              to="/signup"
+              className={
+                window.location.pathname === "/signup"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              Create an account
+            </Link>
+          </button>
 
+          <button className="button">
+            <Link
+              to="/signin"
+              className={
+                window.location.pathname === "/signin"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              Sign back in
+            </Link>
+          </button>
+        </div>
       </div>
     </div>
   );
