@@ -32,11 +32,11 @@ function Profile() {
       </div>
       <br />
 
-      <div class="buttons">
-        <button class="button is-primary"><Link to="/playerque" className={window.location.pathname === "/playerque" ? "nav-link active" : "nav-link"}>
+      <div className="buttons">
+        <button className="button is-primary"><Link to="/playerque" className={window.location.pathname === "/playerque" ? "nav-link active" : "nav-link"}>
                     Create a Game
         </Link></button>
-        <button class="button is-link">Search for a Game</button>
+        <button className="button is-link">Search for a Game</button>
       </div>
     </div>
   );

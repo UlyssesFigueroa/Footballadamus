@@ -12,28 +12,32 @@ import Profile from "./components/Profile";
 import PlayerQue from "./components/PlayerQue";
 import OpenGames from "./components/OpenGames";
 import Welcome from "./components/Welcome";
+// import Chat from "./components/Chat";
+// import Join from "./components/Join/Join";
 
-const choices = ["tackle", "fumble", "reception", "field goal"]
+const choices = ["tackle", "fumble", "reception", "field goal"];
 
 function App() {
   return (
     <Router>
-    <div className="App">
-      <Navbar/>
-      <Switch>
-      <Route exact path="/" component={Welcome}/>
-      <Route exact path="/opengames" component={OpenGames}/>
-      <Route exact path="/profile" component={Profile}/>
-      <Route exact path="/playerque" component={PlayerQue}/>
-      <Route exact path="/signup" component={SignUp}/>
-      <Route exact path="/signin" component={SignIn}/>
-      <Route exact path="/selection" component={Selection}/>
-      <PlayerChoices choices={choices}/>
-      {/* <TableHeadings/> */}
-      {/* <TableData/> */}
-      </Switch>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Welcome}/>
+          <Route exact path="/opengames" component={OpenGames} />
+          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/playerque" component={PlayerQue} />
+          <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/signin" component={SignIn} />
+          <Route exact path="/selection" component={Selection} />
+          <PlayerChoices choices={choices} />
+          {/* <TableHeadings/> */}
+          {/* <TableData/> */}
+          {/* <Route path="/" exact component={Join} />
+          <Route path="/chat" component={Chat} /> */}
+        </Switch>
       </div>
-      </Router>
+    </Router>
   );
 }
 

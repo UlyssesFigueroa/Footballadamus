@@ -7,7 +7,7 @@ function Navbar() {
       <div className="navbar-brand">
         <a className="navbar-item" href="/l">
           <img
-            src="https://github.com/UlyssesFigueroa/Footballadamus/blob/jorge/assets/images/Footballimage.png?raw=true"
+            src="../../assets/images/Footballimage.png"
             alt="Football: a modern CSS framework based on Flexbox"
             height="500"
           />
@@ -75,7 +75,7 @@ function Navbar() {
                 </span>
               </a> */}
               </p>
-              <p className="control">
+              {/* <p className="control">
                 <a
                   className="button is-primary"
                   href="https://github.com/jgthms/bulma/releases/download/0.8.0/bulma-0.8.0.zip"
@@ -85,7 +85,7 @@ function Navbar() {
                   </span>
                   <span>SignUp</span>
                 </a>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
