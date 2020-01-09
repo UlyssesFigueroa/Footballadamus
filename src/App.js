@@ -5,15 +5,15 @@ import Navbar from "./components/Navbar";
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import Selection from "./components/Selection";
-import PlayerChoices from "./components/Playerchoices";
+// import PlayerChoices from "./components/Playerchoices";
 // import TableHeadings from "./components/TableHeadings";
 // import TableData from "./components/TableData";
 import Profile from "./components/Profile";
 import PlayerQue from "./components/PlayerQue";
 import OpenGames from "./components/OpenGames";
 import Welcome from "./components/Welcome";
-// import Chat from "./components/Chat";
-// import Join from "./components/Join/Join";
+import Chat from "./components/Chat/Chat";
+import Join from "./components/Join/Join";
 
 const choices = ["tackle", "fumble", "reception", "field goal"];
 
@@ -30,11 +30,11 @@ function App() {
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/signin" component={SignIn} />
           <Route exact path="/selection" component={Selection} />
-          <PlayerChoices choices={choices} />
+          {/* <PlayerChoices choices={choices} /> */}
           {/* <TableHeadings/> */}
           {/* <TableData/> */}
-          {/* <Route path="/" exact component={Join} />
-          <Route path="/chat" component={Chat} /> */}
+          <Route path="/" exact component={Join} />
+          <Route path="/chat" component={Chat} />
         </Switch>
       </div>
     </Router>

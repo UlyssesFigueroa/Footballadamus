@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="navbar is-transparent">
       <div className="navbar-brand">
-        <a className="navbar-item" href="/l">
+        <a className="navbar-item" href="/">
           <img
             src="../../assets/images/Footballimage.png"
             alt="Football: a modern CSS framework based on Flexbox"
@@ -28,18 +28,19 @@ function Navbar() {
         className={"navbar-menu " + (isNavActive ? "is-active": "")}
       >
         <div className="navbar-start">
-          <a className="navbar-item" href="https://bulma.io/">
+          <a className="navbar-item" href="/">
             Home
           </a>
-          <a className="navbar-item" href="https://bulma.io/">
+
+          <a className="navbar-item" href="/chat">
             Chat
           </a>
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link" href="blank">
+            <a className="navbar-link" href="/profile">
               Profile
             </a>
             <div className="navbar-dropdown is-boxed">
-              <a className="navbar-item" href="blank">
+              <a className="navbar-item" href="/opengames">
                 Games
               </a>
               <a className="navbar-item" href="blank">
