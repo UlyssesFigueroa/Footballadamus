@@ -75,7 +75,7 @@ function Navbar() {
                 </span>
               </a> */}
               </p>
-              <p className="control">
+              {/* <p className="control">
                 <a
                   className="button is-primary"
                   href="https://github.com/jgthms/bulma/releases/download/0.8.0/bulma-0.8.0.zip"
@@ -85,7 +85,7 @@ function Navbar() {
                   </span>
                   <span>SignUp</span>
                 </a>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
