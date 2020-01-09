@@ -12,7 +12,7 @@ import Profile from "./components/Profile";
 import PlayerQue from "./components/PlayerQue";
 import OpenGames from "./components/OpenGames";
 import Welcome from "./components/Welcome";
-// import Chat from "./components/Chat/Chat";
+// import Chat from "./components/Chat";
 // import Join from "./components/Join/Join";
 
 const choices = ["tackle", "fumble", "reception", "field goal"];

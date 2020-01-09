@@ -7,7 +7,7 @@ function Navbar() {
       <div className="navbar-brand">
         <a className="navbar-item" href="/l">
           <img
-            src="https://github.com/UlyssesFigueroa/Footballadamus/blob/jorge/assets/images/Footballimage.png?raw=true"
+            src="../../assets/images/Footballimage.png"
             alt="Football: a modern CSS framework based on Flexbox"
             height="500"
           />
