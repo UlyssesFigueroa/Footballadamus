@@ -4,14 +4,14 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
-import Selection from "./components/Selection";
+import Selection from "./components/Selections/Selection";
 import PlayerChoices from "./components/Playerchoices";
 // import TableHeadings from "./components/TableHeadings";
 // import TableData from "./components/TableData";
-import Profile from "./components/Profile";
+import Profile from "./components/Profiles/Profile";
 import PlayerQue from "./components/PlayerQue";
 import OpenGames from "./components/OpenGames";
-import Welcome from "./components/Welcome";
+import Welcome from "./components/Welcomes/Welcome";
 // import Chat from "./components/Chat";
 // import Join from "./components/Join/Join";
 
