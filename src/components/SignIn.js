@@ -7,10 +7,10 @@ const divStyle = {
 
 };
 
-function SignUp() {
+function SignIn() {
   return (
     <div classNameName="jumbotron">
-      <h1 style={divStyle}>Create an account!</h1>
+      <h1 style={divStyle}>Logback back to your account!</h1>
       <div className="field">
         {/* <label className="label">Name</label> */}
         <div className="control">
@@ -19,9 +19,9 @@ function SignUp() {
       </div>
 
       <div className="field">
-        <label className="label">New Username</label>
+        <label className="label">Username</label>
         <div className="control has-icons-left has-icons-right">
-          <input className="input" type="text" placeholder="New Username" />
+          <input className="input" type="text" placeholder="Your Username" />
           <span className="icon is-small is-left">
             <i className="fas fa-user"></i>
           </span>
@@ -30,12 +30,12 @@ function SignUp() {
       </div>
 
       <div className="field">
-        <label className="label">New Password</label>
+        <label className="label">Password</label>
         <div className="control has-icons-left has-icons-right">
           <input
             className="input"
             type="password"
-            placeholder="New Password"
+            placeholder="Your Password"
           />
           <span className="icon is-small is-left">
             <i className="fas fa-lock"></i>
@@ -89,7 +89,7 @@ function SignUp() {
 
       <div className="field is-grouped">
         <div className="control">
-          <button className="button"><Link to="/profile" className={window.location.pathname === "/profile" ? "nav-link active" : "nav-link"}>Sign Up
+          <button className="button"><Link to="/profile" className={window.location.pathname === "/profile" ? "nav-link active" : "nav-link"}>Sign In
             
         </Link></button>
         </div>
@@ -103,4 +103,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default SignIn;
